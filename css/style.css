@@ -1,0 +1,76 @@
+body {
+    background-color: #47dab5;
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    width: 400%;
+}
+
+h1 {
+    position: sticky;
+    left: 10px;
+    width: 200px;
+}
+
+.backgroundMountains {
+    position: relative;
+    border: 1px solid red;
+    padding-top: 100px;
+    width: 4000px;
+}
+
+.checkpoint {
+    position: absolute;
+    background-color: red;
+    width: 40px;
+    height: 2px;
+}
+
+#climber {
+    width: 40px;
+    height: 70px;
+}
+
+#flag {
+    visibility: visible;
+}
+
+
+.one {
+    bottom: 262px;
+    left: 507px;
+}
+
+.two {
+    bottom: 510px;
+    left: 732px;
+}
+
+.three {
+    bottom: 722px;
+    left: 918px;
+}
+
+.four {
+    bottom: 852px;
+    left: 1509px;
+}
+
+.five {
+    bottom: 1113px;
+    left: 1776px;
+}
+
+.five:before {
+    content: '';
+    background-image: url('../img/win.gif');
+    position: absolute;
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    bottom: -6px;
+    left: 2px;
+    visibility: hidden;
+}
