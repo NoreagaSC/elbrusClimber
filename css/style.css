@@ -17,7 +17,7 @@ h1 {
 .backgroundMountains {
     position: relative;
     padding-top: 100px;
-    width: 4000px;
+    width: 6000px;
 }
 
 .checkpoint {
@@ -30,6 +30,8 @@ h1 {
 #climber {
     width: 40px;
     height: 70px;
+    /* transition: transform 3s linear;
+    transform: rotate3d(0, 1, 1, -75deg); */
 }
 
 #flag {

@@ -32,6 +32,12 @@ function moveClimberDown() {
   }
 }
 
+function readyForSlalom() {
+  const getClimber = document.querySelector("#climber");
+  getClimber.style.transition = "transform 3s linear";
+  getClimber.style.transform = "rotate3d(0, 1, 1, -75deg)";
+}
+
 function getFlagFunc() {
   const getFlag = document.querySelector(".flag");
   getFlag.style.visibility = "visible";
@@ -45,6 +51,7 @@ document.addEventListener("keydown", (event) => {
     if (climberPosition == 4) {
       //   window.getComputedStyle(document.querySelector(".five"), ":before").getPropertyValue('visibility');
       setTimeout(getFlagFunc, 3000);
+      setTimeout(readyForSlalom, 5000);
     }
   } else if (event.code == "KeyZ") {
     moveClimberDown();
