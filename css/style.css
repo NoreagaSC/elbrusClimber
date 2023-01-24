@@ -4,13 +4,14 @@ body {
 
 .stickyContainer {
     position: sticky;
-    top: 0;
+    top: 50px;
     width: 400%;
 }
 
 h1 {
     position: sticky;
-    left: 10px;
+    left: 200px;
+    top: 50px;
     width: 200px;
 }
 
@@ -34,10 +35,23 @@ h1 {
     transform: rotate3d(0, 1, 1, -75deg); */
 }
 
-#flag {
+/* #flag {
     visibility: visible;
-}
+} */
 
+.flag {
+    position: absolute;
+    content: '';
+    background-image: url('../img/win.gif');
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    bottom: -6px;
+    left: 2px;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
 
 .one {
     bottom: 262px;
@@ -76,16 +90,60 @@ h1 {
     visibility: hidden;
 } */
 
-.flag {
+.six {
+    left: 2120px;
+    bottom: 885px;
+}
+
+.seven {
+    left: 2623px;
+    bottom: 615px;
+}
+
+.eight {
+    bottom: 750px;
+    left: 2800px;
+}
+
+.nine {
+    left: 2900px;
+    bottom: 900px;
+}
+
+.ten {
+    left: 3077px;
+    bottom: 1175px;
+}
+
+.text1 {
     position: absolute;
-    content: '';
-    background-image: url('../img/win.gif');
-    background-size: 40px 40px;
-    height: 40px;
-    width: 40px;
-    bottom: -6px;
-    left: 2px;
     padding: 0;
     margin: 0;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: white;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+    bottom: 50px;
+    left: 50px;
+    visibility: hidden;
+}
+
+.text2 {
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    bottom: 50px;
+    left: 50px;
     visibility: hidden;
 }
